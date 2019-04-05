@@ -10,8 +10,9 @@ public class Hooks extends Utils {
 
     @Before
     public void driverSetup(){
-
+        // set up browsers to run the test
         browserSelectore.browserSelect();
+
         // Implicitly Wait for Driver
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
@@ -21,6 +22,7 @@ public class Hooks extends Utils {
         driver.manage().deleteAllCookies();
 
     }
+    //close browser
     @After
     public void tearDown() {
         driver.quit();

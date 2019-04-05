@@ -26,10 +26,14 @@ public class LogInPage extends Utils {
 
         clickOnElement(logInButton);
     }
-    public void enterInValidUserName(){
-        enterText(userNameField,loadProperty.getProperty("inValidUserName"));
+
+    // enter invalid username in username field
+    public void enterInValidUserName() {
+        enterText(userNameField, loadProperty.getProperty("inValidUserName"));
     }
-    public void enterInValidPassword(){
-        enterText(passwordField,loadProperty.getProperty("inValidPassword"));
+
+    //enter invalid password in password field
+    public void enterInValidPassword() {
+        enterText(passwordField, loadProperty.getProperty("inValidPassword"));
     }
 }
