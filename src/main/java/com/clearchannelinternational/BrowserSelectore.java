@@ -11,16 +11,16 @@ public class BrowserSelectore extends Utils {
     public  void browserSelect(){
 
         String browser = loadProperty.getProperty("browser");
-        //String browser = System.getProperty("browser");
 
         if (browser.equalsIgnoreCase("firefox")){
-
+            //Set Property for firefox driver
             System.setProperty("webdriver.gecko.driver","src\\test\\Resources\\BrowserDriver\\geckodriver.exe");
             System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
             System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
             driver = new FirefoxDriver();
             driver.get(loadProperty.getProperty("url"));
             driver.manage().window().maximize();
+            //Set property for chrome driver
         } else if (browser.equalsIgnoreCase("chrome")){
 
             System.setProperty("webdriver.chrome.driver","src\\test\\Resources\\BrowserDriver\\chromedriver.exe");
@@ -34,6 +34,8 @@ public class BrowserSelectore extends Utils {
             driver = new ChromeDriver(options);
             driver.get(loadProperty.getProperty("url"));
             driver.manage().window().maximize();
+
+            //Set property for IE driver
         } else if (browser.equalsIgnoreCase("ie")){
 
             System.setProperty("webdriver.ie.driver","src\\test\\Resources\\BrowserDriver\\IEDriverServer.exe");
