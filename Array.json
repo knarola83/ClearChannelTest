@@ -1,0 +1,20 @@
+
+JASON ARRAY for employees:
+
+{"employees":[    
+    {"name":"Rumi", "email":"rumi@gmail.com", "age":26},    
+    {"name":"Roman", "email":"roman06@gmail.com", "age":31},  
+    {"name":"John", "email":"john@gmail.com", "age":39},    
+    {"name":"Miru", "email":"Miru99@gmail.com", "age":43}   
+]
+} 
+
+myObject = {
+  "name":"Krishna",
+  "age":25,
+  "cars": [
+    { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+    { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+    { "name":"Fiat", "models":[ "500", "Panda" ] }
+  ]
+ }
